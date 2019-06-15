@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#273fad">
+
+
+    <ImageView
+        android:id="@+id/logoHere"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/check2"
+        app:srcCompat="@drawable/check2" />
+
+
+    <TextView
+        android:id="@+id/taskMonkey"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoHere"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Task Sahayak"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/Home"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskMonkey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Home"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/overDue"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Overdue"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/CompletedButton"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Completed"
+        android:textSize="25sp"
+        android:layout_below="@+id/overDue"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_overdue_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="0dp"
+    tools:context="com.aman.taskmonkey.CategoryTasks">
+
+    <include
+        android:id="@+id/toolbarforEditTask"
+        layout="@layout/app_bar_for_over_due"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/mainDataforOverDue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/overdueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Overdue"
+            android:textSize="50sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/overdueText"
+            android:text="No Task Overdue"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:gravity="fill"
+            android:id="@+id/emptyList"
+            android:visibility="invisible"
+            />
+
+        <ListView
+            android:id="@+id/categoryItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/overdueText"
+            android:background="@drawable/categories">
+
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_menu_for_overdue"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/navigation_menu"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
